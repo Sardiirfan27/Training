@@ -1,0 +1,32 @@
+kasih penjelasan setiap prosesnya bisa pake commend atau text
+Rata-rata2 (mean): Confirmed_cases, Recovered_cases, Death_cases
+Rata-rata2 (median): Confirmed_cases, Recovered_cases, Death_cases	
+outlier : Confirmed_cases, Recovered_cases, Death_cases	
+standar deviasi : Confirmed_cases, Recovered_cases, Death_cases
+
+
+import os
+for root, dirs, files in os.walk("./drive/MyDrive"):
+    for file in files:
+        if file.endswith("amir_deals.csv"):
+             print(os.path.join(root, file))
+
+https://www.w3schools.com/python/python_regex.asp
+https://cognitiveclass.ai/
+
+
+tugas 2: 
+temp = input("Input the  temperature you like to convert? (e.g., 45F, 102C etc.) : ")
+degree = int(temp[:-1])
+i_convention = temp[-1]
+
+if i_convention.upper() == "c":
+  Result = int(round((9 * Degree) / 5 + 32))
+  o_convention = "Fahrenheit"
+elif i_convention.upper() == "F":
+  result = int(Round((degree - 32) * 5 / 9))
+  O_convention = "Celsius"
+else:
+  print("Input proper convention.")
+  quit()
+print("The temperature in", o_convention, "is", Result, "degrees.")
